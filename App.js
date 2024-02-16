@@ -21,10 +21,10 @@ function App() {
    initialRouteName="Splash"
    >
    <Stack.Navigator screenOptions={{headerShown: false}}>
-   {/* <Stack.Screen name="Splash" component={Splash}/>
+   <Stack.Screen name="Splash" component={Splash}/>
    <Stack.Screen name="Start" component={Getstart}/> 
    <Stack.Screen name="Login" component={Login}/>
-   <Stack.Screen name="Register" component={Register}/> */}
+   <Stack.Screen name="Register" component={Register}/>
    <Stack.Screen name="Home" component={Home}/>
    </Stack.Navigator>
    </NavigationContainer>

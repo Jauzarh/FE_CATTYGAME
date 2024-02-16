@@ -42,7 +42,6 @@ export default function App({navigation}) {
         }}>
        PC & Mobile Game
         </Text>
-        <Image source={search} style={styles.imageserc}/>
         <TextInput
           style={styles.homeserc}
           onChangeText={setPassword}
