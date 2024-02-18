@@ -6,6 +6,9 @@ import { Card } from 'react-native-paper';
 import gambarback from '../assets/awalan.png'
 import arrowback from '../assets/backbutton.png'
 import search from '../assets/search.png'
+import epep from '../assets/epep.png'
+import emel from '../assets/ml.png'
+import pabaji from '../assets/pubg.png'
 
 
 
@@ -27,7 +30,7 @@ export default function App({navigation}) {
     fontWeight: 'bold',
     fontFamily: 'poopins',
     textAlign: 'center',
-    marginTop: 40,
+    marginTop: -100,
     color: 'white'
         }}>
         DISCOVER
@@ -37,7 +40,8 @@ export default function App({navigation}) {
     fontFamily: 'poopins',
     width: 230,
     marginTop: 10,
-    marginLeft: 125,
+    marginLeft: 115,
+    justifyContent: 'center',
     color: 'white'
         }}>
        PC & Mobile Game
@@ -49,6 +53,23 @@ export default function App({navigation}) {
           value={password}
           placeholder='Search'
         />
+    </View>
+    <View>
+        <TouchableOpacity style={styles.btnlogin}
+          onPress={() => { navigation.navigate('Home') }}>
+          <Image source={epep} style={styles.gambarbutton}/>
+          <Text style={{ textAlign: 'center', color: '#000000', fontSize: 23,fontWeight:         'bold', marginTop: -52, }}>Free Fire</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.btnlogin}
+          onPress={() => { navigation.navigate('Home') }}>
+          <Image source={emel} style={styles.gambarbutton}/>
+          <Text style={{ textAlign: 'center', color: '#000000', fontSize: 23,fontWeight:         'bold', marginTop: -52, }}>Mobile Legend</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.btnlogin}
+          onPress={() => { navigation.navigate('Home') }}>
+          <Image source={pabaji} style={styles.gambarbutton}/>
+          <Text style={{ textAlign: 'center', color: '#000000', fontSize: 23,fontWeight:         'bold', marginTop: -52, }}>PUBG Mobile</Text>
+        </TouchableOpacity>
     </View>
    </ImageBackground>
   );
@@ -75,13 +96,27 @@ button3: {
 homeserc: {
   height: 55,
   width: 380,
-  marginTop: 15,
+  marginTop: 40,
   borderRadius: 32,
   padding: 10,
+  justifyContent: 'center',
   backgroundColor: 'white'
 },
 imageserc: {
   marginTop: -30
+},
+btnlogin: {
+  backgroundColor:  'linear-gradient(269.92deg, rgba(255, 255, 255, 0.5) 99.94%, rgba(255, 255, 255, 0.5) 201.02%)',
+  width: 380,
+  marginTop: 50,
+  height: 100,
+  borderRadius: 10
+},
+gambarbutton: {
+  marginLeft: 22,
+  width: 75,
+  height: 75,
+  marginTop: 12
 }
 
 });

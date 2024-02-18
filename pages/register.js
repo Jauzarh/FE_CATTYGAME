@@ -85,7 +85,7 @@ export default function App({navigation}) {
     <View>
         <TouchableOpacity style={styles.btnlogin}
           onPress={() => { navigation.navigate('Home') }}>
-          <Text style={{ textAlign: 'center', color: '#598324', fontSize: 25,fontWeight:         'bold', marginTop: 10, }}>With Google</Text>
+          <Text style={{ textAlign: 'center', color: '#598324', fontSize: 25,fontWeight:         'bold', marginTop: 10, }}>REGISTER</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => { navigation.navigate('Register') }}

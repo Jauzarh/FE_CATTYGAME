@@ -6,13 +6,13 @@ import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 
 // You can import supported modules from npm
 import { Card } from 'react-native-paper';
-import Getstart from './components/Getstart'
-import Splash from './components/Splashscreen'
-import Login from './components/Login'
-import Register from './components/register'
-import Home from './components/Homescreen'
+import Getstart from './pages/Getstart'
+import Splash from './pages/Splashscreen'
+import Login from './pages/Login'
+import Register from './pages/register'
+import Home from './pages/Homescreen'
 // or 
-import AssetExample from './components/AssetExample';
+import AssetExample from './pages/AssetExample';
 const Stack = createNativeStackNavigator();
 
 function App() {
